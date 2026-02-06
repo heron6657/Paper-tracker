@@ -17,7 +17,5 @@ KEYWORDS = {
 
 
 ARXIV_CORE_KEYWORDS = [
-    "UAV",
-    "LiDAR",
-    "SLAM"
+    "feature fusion", "sensor fusion", "multi-sensor fusion", "UAV", "drone"
 ]

@@ -1,0 +1,687 @@
+[
+    {
+        "title": "$α^3$-SecBench: A Large-Scale Evaluation Suite of Security, Resilience, and Trust for LLM-based UAV Agents over 6G Networks",
+        "authors": [
+            "Mohamed Amine Ferrag",
+            "Abderrahmane Lakas",
+            "Merouane Debbah"
+        ],
+        "abstract": "Autonomous unmanned aerial vehicle (UAV) systems are increasingly deployed in safety-critical, networked environments where they must operate reliably in the presence of malicious adversaries. While recent benchmarks have evaluated large language model (LLM)-based UAV agents in reasoning, navigation, and efficiency, systematic assessment of security, resilience, and trust under adversarial conditions remains largely unexplored, particularly in emerging 6G-enabled settings.\n  We introduce $α^{3}$-SecBench, the first large-scale evaluation suite for assessing the security-aware autonomy of LLM-based UAV agents under realistic adversarial interference. Building on multi-turn conversational UAV missions from $α^{3}$-Bench, the framework augments benign episodes with 20,000 validated security overlay attack scenarios targeting seven autonomy layers, including sensing, perception, planning, control, communication, edge/cloud infrastructure, and LLM reasoning. $α^{3}$-SecBench evaluates agents across three orthogonal dimensions: security (attack detection and vulnerability attribution), resilience (safe degradation behavior), and trust (policy-compliant tool usage).\n  We evaluate 23 state-of-the-art LLMs from major industrial providers and leading AI labs using thousands of adversarially augmented UAV episodes sampled from a corpus of 113,475 missions spanning 175 threat types. While many models reliably detect anomalous behavior, effective mitigation, vulnerability attribution, and trustworthy control actions remain inconsistent. Normalized overall scores range from 12.9% to 57.1%, highlighting a significant gap between anomaly detection and security-aware autonomous decision-making. We release $α^{3}$-SecBench on GitHub: https://github.com/maferrag/AlphaSecBench",
+        "link": "https://arxiv.org/abs/2601.18754v1",
+        "published": "2026-01-26T18:25:07Z"
+    },
+    {
+        "title": "EFSI-DETR: Efficient Frequency-Semantic Integration for Real-Time Small Object Detection in UAV Imagery",
+        "authors": [
+            "Yu Xia",
+            "Chang Liu",
+            "Tianqi Xiang",
+            "Zhigang Tu"
+        ],
+        "abstract": "Real-time small object detection in Unmanned Aerial Vehicle (UAV) imagery remains challenging due to limited feature representation and ineffective multi-scale fusion. Existing methods underutilize frequency information and rely on static convolutional operations, which constrain the capacity to obtain rich feature representations and hinder the effective exploitation of deep semantic features. To address these issues, we propose EFSI-DETR, a novel detection framework that integrates efficient semantic feature enhancement with dynamic frequency-spatial guidance. EFSI-DETR comprises two main components: (1) a Dynamic Frequency-Spatial Unified Synergy Network (DyFusNet) that jointly exploits frequency and spatial cues for robust multi-scale feature fusion, (2) an Efficient Semantic Feature Concentrator (ESFC) that enables deep semantic extraction with minimal computational cost. Furthermore, a Fine-grained Feature Retention (FFR) strategy is adopted to incorporate spatially rich shallow features during fusion to preserve fine-grained details, crucial for small object detection in UAV imagery. Extensive experiments on VisDrone and CODrone benchmarks demonstrate that our EFSI-DETR achieves the state-of-the-art performance with real-time efficiency, yielding improvement of \\textbf{1.6}\\% and \\textbf{5.8}\\% in AP and AP$_{s}$ on VisDrone, while obtaining \\textbf{188} FPS inference speed on a single RTX 4090 GPU.",
+        "link": "https://arxiv.org/abs/2601.18597v1",
+        "published": "2026-01-26T15:41:37Z"
+    },
+    {
+        "title": "Discriminability-Driven Spatial-Channel Selection with Gradient Norm for Drone Signal OOD Detection",
+        "authors": [
+            "Chuhan Feng",
+            "Jing Li",
+            "Jie Li",
+            "Lu Lv",
+            "Fengkui Gong"
+        ],
+        "abstract": "We propose a drone signal out-of-distribution (OOD) detection algorithm based on discriminability-driven spatial-channel selection with a gradient norm. Time-frequency image features are adaptively weighted along both spatial and channel dimensions by quantifying inter-class similarity and variance based on protocol-specific time-frequency characteristics. Subsequently, a gradient-norm metric is introduced to measure perturbation sensitivity for capturing the inherent instability of OOD samples, which is then fused with energy-based scores for joint inference. Simulation results demonstrate that the proposed algorithm provides superior discriminative power and robust performance via SNR and various drone types.",
+        "link": "https://arxiv.org/abs/2601.18329v1",
+        "published": "2026-01-26T10:13:07Z"
+    },
+    {
+        "title": "Cognitive Fusion of ZC Sequences and Time-Frequency Images for Out-of-Distribution Detection of Drone Signals",
+        "authors": [
+            "Jie Li",
+            "Jing Li",
+            "Lu Lv",
+            "Zhanyu Ju",
+            "Fengkui Gong"
+        ],
+        "abstract": "We propose a drone signal out-of-distribution detection (OODD) algorithm based on the cognitive fusion of Zadoff-Chu (ZC) sequences and time-frequency images (TFI). ZC sequences are identified by analyzing the communication protocols of DJI drones, while TFI capture the time-frequency characteristics of drone signals with unknown or non-standard communication protocols. Both modalities are used jointly to enable OODD in the drone remote identification (RID) task. Specifically, ZC sequence features and TFI features are generated from the received radio frequency signals, which are then processed through dedicated feature extraction module to enhance and align them. The resultant multi-modal features undergo multi-modal feature interaction, single-modal feature fusion, and multi-modal feature fusion to produce features that integrate and complement information across modalities. Discrimination scores are computed from the fused features along both spatial and channel dimensions to capture time-frequency characteristic differences dictated by the communication protocols, and these scores will be transformed into adaptive attention weights. The weighted features are then passed through a Softmax function to produce the signal classification results. Simulation results demonstrate that the proposed algorithm outperforms existing algorithms and achieves 1.7% and 7.5% improvements in RID and OODD metrics, respectively. The proposed algorithm also performs strong robustness under varying flight conditions and across different drone types.",
+        "link": "https://arxiv.org/abs/2601.18326v1",
+        "published": "2026-01-26T10:10:08Z"
+    },
+    {
+        "title": "Revisiting Aerial Scene Classification on the AID Benchmark",
+        "authors": [
+            "Subhajeet Das",
+            "Susmita Ghosh",
+            "Abhiroop Chatterjee"
+        ],
+        "abstract": "Aerial images play a vital role in urban planning and environmental preservation, as they consist of various structures, representing different types of buildings, forests, mountains, and unoccupied lands. Due to its heterogeneous nature, developing robust models for scene classification remains a challenge. In this study, we conduct a literature review of various machine learning methods for aerial image classification. Our survey covers a range of approaches from handcrafted features (e.g., SIFT, LBP) to traditional CNNs (e.g., VGG, GoogLeNet), and advanced deep hybrid networks. In this connection, we have also designed Aerial-Y-Net, a spatial attention-enhanced CNN with multi-scale feature fusion mechanism, which acts as an attention-based model and helps us to better understand the complexities of aerial images. Evaluated on the AID dataset, our model achieves 91.72% accuracy, outperforming several baseline architectures.",
+        "link": "https://arxiv.org/abs/2601.18263v1",
+        "published": "2026-01-26T08:39:02Z"
+    },
+    {
+        "title": "AmbER$^2$: Dual Ambiguity-Aware Emotion Recognition Applied to Speech and Text",
+        "authors": [
+            "Jingyao Wu",
+            "Grace Lin",
+            "Yinuo Song",
+            "Rosalind Picard"
+        ],
+        "abstract": "Emotion recognition is inherently ambiguous, with uncertainty arising both from rater disagreement and from discrepancies across modalities such as speech and text. There is growing interest in modeling rater ambiguity using label distributions. However, modality ambiguity remains underexplored, and multimodal approaches often rely on simple feature fusion without explicitly addressing conflicts between modalities. In this work, we propose AmbER$^2$, a dual ambiguity-aware framework that simultaneously models rater-level and modality-level ambiguity through a teacher-student architecture with a distribution-wise training objective. Evaluations on IEMOCAP and MSP-Podcast show that AmbER$^2$ consistently improves distributional fidelity over conventional cross-entropy baselines and achieves performance competitive with, or superior to, recent state-of-the-art systems. For example, on IEMOCAP, AmbER$^2$ achieves relative improvements of 20.3% on Bhattacharyya coefficient (0.83 vs. 0.69), 13.6% on R$^2$ (0.67 vs. 0.59), 3.8% on accuracy (0.683 vs. 0.658), and 4.5% on F1 (0.675 vs. 0.646). Further analysis across ambiguity levels shows that explicitly modeling ambiguity is particularly beneficial for highly uncertain samples. These findings highlight the importance of jointly addressing rater and modality ambiguity when building robust emotion recognition systems.",
+        "link": "https://arxiv.org/abs/2601.18010v1",
+        "published": "2026-01-25T22:04:56Z"
+    },
+    {
+        "title": "DTC: A Deformable Transposed Convolution Module for Medical Image Segmentation",
+        "authors": [
+            "Chengkun Sun",
+            "Jinqian Pan",
+            "Renjie Liang",
+            "Zhengkang Fan",
+            "Xin Miao",
+            "Jiang Bian",
+            "Jie Xu"
+        ],
+        "abstract": "In medical image segmentation, particularly in UNet-like architectures, upsampling is primarily used to transform smaller feature maps into larger ones, enabling feature fusion between encoder and decoder features and supporting multi-scale prediction. Conventional upsampling methods, such as transposed convolution and linear interpolation, operate on fixed positions: transposed convolution applies kernel elements to predetermined pixel or voxel locations, while linear interpolation assigns values based on fixed coordinates in the original feature map. These fixed-position approaches may fail to capture structural information beyond predefined sampling positions and can lead to artifacts or loss of detail. Inspired by deformable convolutions, we propose a novel upsampling method, Deformable Transposed Convolution (DTC), which learns dynamic coordinates (i.e., sampling positions) to generate high-resolution feature maps for both 2D and 3D medical image segmentation tasks. Experiments on 3D (e.g., BTCV15) and 2D datasets (e.g., ISIC18, BUSI) demonstrate that DTC can be effectively integrated into existing medical image segmentation models, consistently improving the decoder's feature reconstruction and detail recovery capability.",
+        "link": "https://arxiv.org/abs/2601.17939v1",
+        "published": "2026-01-25T18:33:51Z"
+    },
+    {
+        "title": "Ampli-Flection for 6G: Active-RIS-Aided Aerial Backhaul with Full 3D Coverage",
+        "authors": [
+            "Hong-Bae Jeon",
+            "Chan-Byoung Chae"
+        ],
+        "abstract": "In this paper, we propose a novel aerial backhaul architecture that employs an aerial active reconfigurable intelligent surface (RIS) to achieve energy-efficient, {full 3D coverage including UAV-BSs and ground users in 6G wireless networks}. Unlike prior aerial-RIS approaches limited to {2D coverage with only servicing ground users} or passive operation, the proposed design integrates an active-RIS onto a high-altitude aerial platform, enabling reliable line-of-sight links and overcoming multiplicative fading through amplification. In a scenario with UAV-BSs deployed to handle sudden traffic surges in urban areas, the aerial-active-RIS both reflects and amplifies backhaul signals to overcome blockage. We jointly optimize the aerial platform placement, array partitioning, and RIS phase configuration to maximize UAV-BS energy-efficiency. Simulation results confirm that the proposed method significantly outperforms benchmarks, demonstrating its strong potential to deliver resilient backhaul connectivity with comprehensive 3D coverage in 6G networks.",
+        "link": "https://arxiv.org/abs/2601.17751v1",
+        "published": "2026-01-25T08:48:20Z"
+    },
+    {
+        "title": "Video Compression with Hierarchical Temporal Neural Representation",
+        "authors": [
+            "Jun Zhu",
+            "Xinfeng Zhang",
+            "Lv Tang",
+            "Junhao Jiang",
+            "Gai Zhang",
+            "Jia Wang"
+        ],
+        "abstract": "Video compression has recently benefited from implicit neural representations (INRs), which model videos as continuous functions. INRs offer compact storage and flexible reconstruction, providing a promising alternative to traditional codecs. However, most existing INR-based methods treat the temporal dimension as an independent input, limiting their ability to capture complex temporal dependencies. To address this, we propose a Hierarchical Temporal Neural Representation for Videos, TeNeRV. TeNeRV integrates short- and long-term dependencies through two key components. First, an Inter-Frame Feature Fusion (IFF) module aggregates features from adjacent frames, enforcing local temporal coherence and capturing fine-grained motion. Second, a GoP-Adaptive Modulation (GAM) mechanism partitions videos into Groups-of-Pictures and learns group-specific priors. The mechanism modulates network parameters, enabling adaptive representations across different GoPs. Extensive experiments demonstrate that TeNeRV consistently outperforms existing INR-based methods in rate-distortion performance, validating the effectiveness of our proposed approach.",
+        "link": "https://arxiv.org/abs/2601.17743v1",
+        "published": "2026-01-25T08:26:12Z"
+    },
+    {
+        "title": "Composite Adaptive Control Barrier Functions for Safety-Critical Systems with Parametric Uncertainty",
+        "authors": [
+            "Mohammadreza Kamaldar"
+        ],
+        "abstract": "Control barrier functions guarantee safety but typically require accurate system models. Parametric uncertainty invalidates these guarantees. Existing robust methods maintain safety via worst-case bounds, limiting performance, while modular learning schemes decouple estimation from safety, permitting state violations during training. This paper presents the composite adaptive control barrier function (CaCBF) algorithm for nonlinear control-affine systems subject to linear parametric uncertainty. We derive adaptation laws from a composite energy function comprising a logarithmic safety barrier, a control Lyapunov function, and a parameter error term. We prove that CaCBF guarantees the forward invariance of the safe set and the uniform boundedness of the closed-loop system. This safety guarantee holds without requiring parameter convergence. Simulations of adaptive cruise control, an omnidirectional robot, and a planar drone demonstrate the efficacy of the CaCBF algorithm.",
+        "link": "https://arxiv.org/abs/2601.17683v1",
+        "published": "2026-01-25T04:05:54Z"
+    },
+    {
+        "title": "DiffusionCinema: Text-to-Aerial Cinematography",
+        "authors": [
+            "Valerii Serpiva",
+            "Artem Lykov",
+            "Jeffrin Sam",
+            "Aleksey Fedoseev",
+            "Dzmitry Tsetserukou"
+        ],
+        "abstract": "We propose a novel Unmanned Aerial Vehicles (UAV) assisted creative capture system that leverages diffusion models to interpret high-level natural language prompts and automatically generate optimal flight trajectories for cinematic video recording. Instead of manually piloting the drone, the user simply describes the desired shot (e.g., \"orbit around me slowly from the right and reveal the background waterfall\"). Our system encodes the prompt along with an initial visual snapshot from the onboard camera, and a diffusion model samples plausible spatio-temporal motion plans that satisfy both the scene geometry and shot semantics. The generated flight trajectory is then executed autonomously by the UAV to record smooth, repeatable video clips that match the prompt. User evaluation using NASA-TLX showed a significantly lower overall workload with our interface (M = 21.6) compared to a traditional remote controller (M = 58.1), demonstrating a substantial reduction in perceived effort. Mental demand (M = 11.5 vs. 60.5) and frustration (M = 14.0 vs. 54.5) were also markedly lower for our system, confirming clear usability advantages in autonomous text-driven flight control. This project demonstrates a new interaction paradigm: text-to-cinema flight, where diffusion models act as the \"creative operator\" converting story intentions directly into aerial motion.",
+        "link": "https://arxiv.org/abs/2601.17412v1",
+        "published": "2026-01-24T11:12:30Z"
+    },
+    {
+        "title": "Revisiting Lightweight Low-Light Image Enhancement: From a YUV Color Space Perspective",
+        "authors": [
+            "Hailong Yan",
+            "Shice Liu",
+            "Xiangtao Zhang",
+            "Lujian Yao",
+            "Fengxiang Yang",
+            "Jinwei Chen",
+            "Bo Li"
+        ],
+        "abstract": "In the current era of mobile internet, Lightweight Low-Light Image Enhancement (L3IE) is critical for mobile devices, which faces a persistent trade-off between visual quality and model compactness. While recent methods employ disentangling strategies to simplify lightweight architectural design, such as Retinex theory and YUV color space transformations, their performance is fundamentally limited by overlooking channel-specific degradation patterns and cross-channel interactions. To address this gap, we perform a frequency-domain analysis that confirms the superiority of the YUV color space for L3IE. We identify a key insight: the Y channel primarily loses low-frequency content, while the UV channels are corrupted by high-frequency noise. Leveraging this finding, we propose a novel YUV-based paradigm that strategically restores channels using a Dual-Stream Global-Local Attention module for the Y channel, a Y-guided Local-Aware Frequency Attention module for the UV channels, and a Guided Interaction module for final feature fusion. Extensive experiments validate that our model establishes a new state-of-the-art on multiple benchmarks, delivering superior visual quality with a significantly lower parameter count.",
+        "link": "https://arxiv.org/abs/2601.17349v1",
+        "published": "2026-01-24T07:27:54Z"
+    },
+    {
+        "title": "Boundary and Position Information Mining for Aerial Small Object Detection",
+        "authors": [
+            "Rongxin Huang",
+            "Guangfeng Lin",
+            "Wenbo Zhou",
+            "Zhirong Li",
+            "Wenhuan Wu"
+        ],
+        "abstract": "Unmanned Aerial Vehicle (UAV) applications have become increasingly prevalent in aerial photography and object recognition. However, there are major challenges to accurately capturing small targets in object detection due to the imbalanced scale and the blurred edges. To address these issues, boundary and position information mining (BPIM) framework is proposed for capturing object edge and location cues. The proposed BPIM includes position information guidance (PIG) module for obtaining location information, boundary information guidance (BIG) module for extracting object edge, cross scale fusion (CSF) module for gradually assembling the shallow layer image feature, three feature fusion (TFF) module for progressively combining position and boundary information, and adaptive weight fusion (AWF) module for flexibly merging the deep layer semantic feature. Therefore, BPIM can integrate boundary, position, and scale information in image for small object detection using attention mechanisms and cross-scale feature fusion strategies. Furthermore, BPIM not only improves the discrimination of the contextual feature by adaptive weight fusion with boundary, but also enhances small object perceptions by cross-scale position fusion. On the VisDrone2021, DOTA1.0, and WiderPerson datasets, experimental results show the better performances of BPIM compared to the baseline Yolov5-P2, and obtains the promising performance in the state-of-the-art methods with comparable computation load.",
+        "link": "https://arxiv.org/abs/2601.16617v1",
+        "published": "2026-01-23T10:15:12Z"
+    },
+    {
+        "title": "Agentic AI-RAN Empowering Synergetic Sensing, Communication, Computing, and Control",
+        "authors": [
+            "Lingxiao Sun",
+            "Zhaoyang Zhang",
+            "Zihan Lin",
+            "Zirui Chen",
+            "Weijie Zhou",
+            "Zhaohui Yang",
+            "Tony Q. S. Quek"
+        ],
+        "abstract": "Future sixth-generation (6G) networks are expected to support low-altitude wireless networks (LAWNs), where unmanned aerial vehicles (UAVs) and aerial robots operate in highly dynamic three-dimensional environments under stringent latency, reliability, and autonomy requirements. In such scenarios, autonomous task execution at the network edge demands holistic coordination among sensing, communication, computing, and control (SC3) processes. Agentic Artificially Intelligent Radio Access Networks (Agentic AI-RAN) offer a promising paradigm by enabling the edge network to function as an autonomous decision-making entity for low-altitude agents with limited onboard resources. In this article, we propose and design a task-oriented Agentic AI-RAN architecture that enables SC3 task execution within a single edge node. This integrated design tackles the fundamental problem of coordinating heterogeneous workloads in resource-constrained edge environments. Furthermore, a representative low-altitude embodied intelligence system is prototyped based on a general-purpose Graphics Processing Unit (GPU) platform to demonstrate autonomous drone navigation in realistic settings. By leveraging the Multi-Instance GPU (MIG) partitioning technique and the containerized deployment, the demonstration system achieves physical resource isolation while supporting tightly coupled coordination between real-time communication and multimodal inference under a unified task framework. Experimental results demonstrate low closed-loop latency, robust bidirectional communication, and stable performance under dynamic runtime conditions, highlighting its viability for mission-critical low-altitude wireless networks in 6G.",
+        "link": "https://arxiv.org/abs/2601.16565v1",
+        "published": "2026-01-23T09:04:26Z"
+    },
+    {
+        "title": "UAV-Assisted Joint Data Collection and Wireless Power Transfer for Batteryless Sensor Networks",
+        "authors": [
+            "Wen Zhang",
+            "Aimin Wang",
+            "Geng Sun",
+            "Jiahui Li",
+            "Jiacheng Wang",
+            "Changyuan Zhao",
+            "Dusit Niyato"
+        ],
+        "abstract": "The development of wireless power transfer (WPT) and Internet of Things (IoT) offers significant potential but faces challenges such as limited energy supply, dynamic environmental changes, and unstable transmission links. This paper presents an unmanned aerial vehicle (UAV)-assisted data collection and WPT scheme to support batteryless sensor (BLS) networks in remote areas. In this system, BLSs harvest energy from the UAV and utilize the harvested energy to transmit the collected data back to the UAV. The goal is to maximize the collected data volume and fairness index while minimizing the UAV energy consumption. To achieve these objectives, an optimization problem is formulated to jointly optimize the transmit power and UAV trajectory. Due to the non-convexity and dynamic nature of the problem, a deep reinforcement learning (DRL)-based algorithm is proposed to solve the problem. Specifically, this algorithm integrates prioritized experience replay and the performer module to enhance system stability and accelerate convergence. Simulation results demonstrate that the proposed approach consistently outperforms benchmark schemes in terms of collected data volume, fairness, and UAV energy consumption.",
+        "link": "https://arxiv.org/abs/2601.16533v1",
+        "published": "2026-01-23T08:09:49Z"
+    },
+    {
+        "title": "TransfoREM: Transformer aided 3D Radio Environment Mapping",
+        "authors": [
+            "Gautham Reddy",
+            "Ismail Guvenc",
+            "Mihail L. Sichitiu",
+            "Arupjyoti Bhuyan",
+            "Bryton Petersen",
+            "Jason Abrahamson"
+        ],
+        "abstract": "Providing reliable cellular connectivity to Unmanned Aerial Vehicles (UAV) is a key challenge, as existing terrestrial networks are deployed mainly for ground-level coverage. The cellular network coverage may be available for a limited range from the antenna side lobes, with poor connectivity further exacerbated by UAV flight dynamics. In this work, we propose TransfoREM, a 3D Radio Environment Map (REM) generation method that combines deterministic channel models and real-world data to map terrestrial network coverage at higher altitudes. At the core of our solution is a transformer model that translates radio propagation mapping into a sequence prediction task to construct REMs. Our results demonstrate that TransfoREM offers improved interpolation capability on real-world data compared against conventional Kriging and other machine learning (ML) techniques. Furthermore, TransfoREM is designed for holistic integration into cellular networks at the base station (BS) level, where it can build REMs, which can then be leveraged for enhanced resource allocation, interference management, and spatial spectrum utilization.",
+        "link": "https://arxiv.org/abs/2601.16421v1",
+        "published": "2026-01-23T03:13:37Z"
+    },
+    {
+        "title": "Low-altitude Multi-UAV-assisted Data Collection and Semantic Forwarding for Post-Disaster Relief",
+        "authors": [
+            "Xiaoya Zheng",
+            "Geng Sun",
+            "Jiahui Li",
+            "Jiacheng Wang",
+            "Weijie Yuan",
+            "Qingqing Wu",
+            "Dusit Niyato",
+            "Abbas Jamalipour"
+        ],
+        "abstract": "The low-altitude economy (LAE) is an emerging economic paradigm which fosters integrated development across multiple fields. As a pivotal component of the LAE, low-altitude uncrewed aerial vehicles (UAVs) can restore communication by serving as aerial relays between the post-disaster areas and remote base stations (BSs). However, conventional approaches face challenges from vulnerable long-distance links between the UAVs and remote BSs, and data bottlenecks arising from massive data volumes and limited onboard UAV resources. In this work, we investigate a low-altitude multi-UAV-assisted data collection and semantic forwarding network, in which multiple UAVs collect data from ground users, form clusters, perform intra-cluster data aggregation with semantic extraction, and then cooperate as virtual antenna array (VAAs) to transmit the extracted semantic information to a remote BS via collaborative beamforming (CB). We formulate a data collection and semantic forwarding multi-objective optimization problem (DCSFMOP) that jointly maximizes both the user and semantic transmission rates while minimizing UAV energy consumption. The formulated DCSFMOP is a mixed-integer nonlinear programming (MINLP) problem that is inherently NP-hard and characterized by dynamically varying decision variable dimensionality. To address these challenges, we propose a large language model-enabled alternating optimization approach (LLM-AOA), which effectively handles the complex search space and variable dimensionality by optimizing different subsets of decision variables through tailored optimization strategies. Simulation results demonstrate that LLM-AOA outperforms AOA by approximately 26.8\\% and 22.9\\% in transmission rate and semantic rate, respectively.",
+        "link": "https://arxiv.org/abs/2601.16146v1",
+        "published": "2026-01-22T17:38:12Z"
+    },
+    {
+        "title": "Designing faster mixed integer linear programming algorithm via learning the optimal path",
+        "authors": [
+            "Ruizhi Liu",
+            "Liming Xu",
+            "Xulin Huang",
+            "Jingyan Sui",
+            "Shizhe Ding",
+            "Boyang Xia",
+            "Chungong Yu",
+            "Dongbo Bu"
+        ],
+        "abstract": "Designing faster algorithms for solving Mixed-Integer Linear Programming (MILP) problems is highly desired across numerous practical domains, as a vast array of complex real-world challenges can be effectively modeled as MILP formulations. Solving these problems typically employs the branch-and-bound algorithm, the core of which can be conceived as searching for a path of nodes (or sub-problems) that contains the optimal solution to the original MILP problem. Traditional approaches to finding this path rely heavily on hand-crafted, intuition-based heuristic strategies, which often suffer from unstable and unpredictable performance across different MILP problem instances. To address this limitation, we introduce DeepBound, a deep learning-based node selection algorithm that automates the learning of such human intuition from data. The core of DeepBound lies in learning to prioritize nodes containing the optimal solution, thereby improving solving efficiency. DeepBound introduces a multi-level feature fusion network to capture the node representations. To tackle the inherent node imbalance in branch-and-bound trees, DeepBound employs a pairwise training paradigm that enhances the model's ability to discriminate between nodes. Extensive experiments on three NP-hard MILP benchmarks demonstrate that DeepBound achieves superior solving efficiency over conventional heuristic rules and existing learning-based approaches, obtaining optimal feasible solutions with significantly reduced computation time. Moreover, DeepBound demonstrates strong generalization capability on large and complex instances. The analysis of its learned features reveals that the method can automatically discover more flexible and robust feature selection, which may effectively improve and potentially replace human-designed heuristic rules.",
+        "link": "https://arxiv.org/abs/2601.16056v1",
+        "published": "2026-01-22T15:41:22Z"
+    },
+    {
+        "title": "Dynamic Server Allocation Under Stochastic Switchover on Time-Varying Links",
+        "authors": [
+            "Hossein Mohammadalizadeh",
+            "Holger Karl"
+        ],
+        "abstract": "Dynamic resource allocation to parallel queues is a cornerstone of network scheduling, yet classical solutions often fail when accounting for the overhead of switching delays to queues with superior link conditions. In particular, system performance is further degraded when switching delays are stochastic and inhomogeneous. In this domain, the myopic, Max-Weight policy struggles, as it is agnostic to switching delays. This paper introduces ACI, a non-myopic, frame-based scheduling framework that directly amortizes these switching delays. We first use a Lyapunov drift analysis to prove that backlog-driven ACI is throughput-optimal with respect to a scaled capacity region; then validate ACI's effectiveness on multi-UAV networks with an FSO backhaul. Finally, we demonstrate how adapting its core urgency metric provides the flexibility to navigate the throughput-latency trade-off.",
+        "link": "https://arxiv.org/abs/2601.15904v1",
+        "published": "2026-01-22T12:31:17Z"
+    },
+    {
+        "title": "A Beacon Based Solution for Autonomous UUVs GNSS-Denied Stealthy Navigation",
+        "authors": [
+            "Alexandre Albore",
+            "Humbert Fiorino",
+            "Damien Pellier"
+        ],
+        "abstract": "Autonomous Unmanned Underwater Vehicles (UUVs) enable military and civilian covert operations in coastal areas without relying on support vessels or Global Navigation Satellite Systems (GNSS). Such operations are critical when surface access is not possible and stealthy navigation is required in restricted environments such as protected zones or dangerous areas under access ban. GNSS denied navigation is then essential to maintaining concealment as surfacing could expose UUVs to detection. To ensure a precise fleet positioning a constellation of beacons deployed by aerial or surface drones establish a synthetic landmark network that will guide the fleet of UUVs along an optimized path from the continental shelf to the goal on the shore. These beacons either submerged or floating emit acoustic signals for UUV localisation and navigation. A hierarchical planner generates an adaptive route for the drones executing primitive actions while continuously monitoring and replanning as needed to maintain trajectory accuracy.",
+        "link": "https://arxiv.org/abs/2601.15802v1",
+        "published": "2026-01-22T09:34:56Z"
+    },
+    {
+        "title": "Glove2UAV: A Wearable IMU-Based Glove for Intuitive Control of UAV",
+        "authors": [
+            "Amir Habel",
+            "Ivan Snegirev",
+            "Elizaveta Semenyakina",
+            "Miguel Altamirano Cabrera",
+            "Jeffrin Sam",
+            "Fawad Mehboob",
+            "Roohan Ahmed Khan",
+            "Muhammad Ahsan Mustafa",
+            "Dzmitry Tsetserukou"
+        ],
+        "abstract": "This paper presents Glove2UAV, a wearable IMU-glove interface for intuitive UAV control through hand and finger gestures, augmented with vibrotactile warnings for exceeding predefined speed thresholds. To promote safer and more predictable interaction in dynamic flight, Glove2UAV is designed as a lightweight and easily deployable wearable interface intended for real-time operation. Glove2UAV streams inertial measurements in real time and estimates palm and finger orientations using a compact processing pipeline that combines median-based outlier suppression with Madgwick-based orientation estimation. The resulting motion estimations are mapped to a small set of control primitives for directional flight (forward/backward and lateral motion) and, when supported by the platform, to object-interaction commands. Vibrotactile feedback is triggered when flight speed exceeds predefined threshold values, providing an additional alert channel during operation. We validate real-time feasibility by synchronizing glove signals with UAV telemetry in both simulation and real-world flights. The results show fast gesture-based command execution, stable coupling between gesture dynamics and platform motion, correct operation of the core command set in our trials, and timely delivery of vibratile warning cues.",
+        "link": "https://arxiv.org/abs/2601.15775v1",
+        "published": "2026-01-22T09:03:57Z"
+    },
+    {
+        "title": "AION: Aerial Indoor Object-Goal Navigation Using Dual-Policy Reinforcement Learning",
+        "authors": [
+            "Zichen Yan",
+            "Yuchen Hou",
+            "Shenao Wang",
+            "Yichao Gao",
+            "Rui Huang",
+            "Lin Zhao"
+        ],
+        "abstract": "Object-Goal Navigation (ObjectNav) requires an agent to autonomously explore an unknown environment and navigate toward target objects specified by a semantic label. While prior work has primarily studied zero-shot ObjectNav under 2D locomotion, extending it to aerial platforms with 3D locomotion capability remains underexplored. Aerial robots offer superior maneuverability and search efficiency, but they also introduce new challenges in spatial perception, dynamic control, and safety assurance. In this paper, we propose AION for vision-based aerial ObjectNav without relying on external localization or global maps. AION is an end-to-end dual-policy reinforcement learning (RL) framework that decouples exploration and goal-reaching behaviors into two specialized policies. We evaluate AION on the AI2-THOR benchmark and further assess its real-time performance in IsaacSim using high-fidelity drone models. Experimental results show that AION achieves superior performance across comprehensive evaluation metrics in exploration, navigation efficiency, and safety. The video can be found at https://youtu.be/TgsUm6bb7zg.",
+        "link": "https://arxiv.org/abs/2601.15614v1",
+        "published": "2026-01-22T03:35:34Z"
+    },
+    {
+        "title": "Resource Allocation and Sharing for UAV-Assisted Integrated TN-NTN with Multi-Connectivity",
+        "authors": [
+            "Abd Ullah Khan",
+            "Wali Ullah Khan",
+            "Haejoon Jung",
+            "Hyundong Shin"
+        ],
+        "abstract": "Unmanned aerial vehicles (UAVs) with multi-connectivity (MC) capabilities efficiently and reliably transfer data between terrestrial networks (TNs) and non-terrestrial networks (NTNs). However, optimally sharing and allocating spectrum and power resources to maintain MC while ensuring reliable connectivity and optimal performance remains challenging in such networks. Channel variations induced by mobility in UAV networks, coupled with the varying quality of service (QoS) demands of heterogeneous devices, resource sharing, and fairness requirements in capacity distribution pose challenges to optimal resource allocation. Thus, this paper investigates resource allocation for QoS-constrained, MC-enabled, dynamic UAVs in an integrated TN-NTN environment with spectrum sharing and fairness considerations. To this end, we consider three types of links: UAV-to-radio base station (RBS), UAV-to-UAV, and UAV-to-HAP. We also assume two types of UAVs with diverse QoS requirements to reflect a practical scenario. Consequently, we propose two algorithms. The first algorithm maximizes the capacity of UAVs-RBS and UAVs-HAP links while ensuring the reliability of the UAV-UAV link. To achieve this, the algorithm maximizes the collective throughput of the UAVs by optimizing the sum capacity of all the UAV-RBS and UAV-HAP links. Next, to provide constant capacity to all links and ensure fairness, we propose another algorithm that maximizes the minimum capacity across all links. We validate the performance of both algorithms through simulation",
+        "link": "https://arxiv.org/abs/2601.15532v2",
+        "published": "2026-01-21T23:34:05Z"
+    },
+    {
+        "title": "A Universal Large Language Model -- Drone Command and Control Interface",
+        "authors": [
+            "Javier N. Ramos-Silva",
+            "Peter J. Burke"
+        ],
+        "abstract": "The use of artificial intelligence (AI) for drone control can have a transformative impact on drone capabilities, especially when real world information can be integrated with drone sensing, command, and control, part of a growing field of physical AI. Large language models (LLMs) can be advantageous if trained at scale on general knowledge, but especially and in particular when the training data includes information such as detailed map geography topology of the entire planet, as well as the ability to access real time situational data such as weather. However, challenges remain in the interface between drones and LLMs in general, with each application requiring a tedious, labor intensive effort to connect the LLM trained knowledge to drone command and control. Here, we solve that problem, using an interface strategy that is LLM agnostic and drone agnostic, providing the first universal, versatile, comprehensive and easy to use drone control interface. We do this using the new model context protocol (MCP) standard, an open standard that provides a universal way for AI systems to access external data, tools, and services. We develop and deploy a cloud based Linux machine hosting an MCP server that supports the Mavlink protocol, an ubiquitous drone control language used almost universally by millions of drones including Ardupilot and PX4 framework.We demonstrate flight control of a real unmanned aerial vehicle. In further testing, we demonstrate extensive flight planning and control capability in a simulated drone, integrated with a Google Maps MCP server for up to date, real time navigation information. This demonstrates a universal approach to integration of LLMs with drone command and control, a paradigm that leverages and exploits virtually all of modern AI industry with drone technology in an easy to use interface that translates natural language to drone control.",
+        "link": "https://arxiv.org/abs/2601.15486v1",
+        "published": "2026-01-21T21:37:54Z"
+    },
+    {
+        "title": "ISAC-over-NTN: HAPS-UAV Framework for Post-Disaster Responsive 6G Networks",
+        "authors": [
+            "Berk Ciloglu",
+            "Ozgun Ersoy",
+            "Metin Ozturk",
+            "Ali Gorcin"
+        ],
+        "abstract": "In disaster scenarios, ensuring both reliable communication and situational awareness becomes a critical challenge due to the partial or complete collapse of terrestrial networks. This paper proposes an integrated sensing and communication (ISAC) over non-terrestrial networks (NTN) architecture referred to as ISAC-over-NTN that integrates multiple uncrewed aerial vehicles (UAVs) and a high-altitude platform station (HAPS) to maintain resilient and reliable network operations in post-disaster conditions. We aim to achieve two main objectives: i) provide a reliable communication infrastructure, thereby ensuring the continuity of search-and-rescue activities and connecting people to their loved ones, and ii) detect users, such as those trapped under rubble or those who are mobile, using a Doppler-based mobility detection model. We employ an innovative beamforming method that simultaneously transmits data and detects Doppler-based mobility by integrating multi-user multiple-input multiple-output (MU-MIMO) communication and monostatic sensing within the same transmission chain. The results show that the proposed framework maintains reliable connectivity and achieves high detection accuracy of users in critical locations, reaching 90% motion detection sensitivity and 88% detection accuracy.",
+        "link": "https://arxiv.org/abs/2601.15422v1",
+        "published": "2026-01-21T19:33:00Z"
+    },
+    {
+        "title": "MonoRace: Winning Champion-Level Drone Racing with Robust Monocular AI",
+        "authors": [
+            "Stavrow A. Bahnam",
+            "Robin Ferede",
+            "Till M. Blaha",
+            "Anton E. Lang",
+            "Erin Lucassen",
+            "Quentin Missinne",
+            "Aderik E. C. Verraest",
+            "Christophe De Wagter",
+            "Guido C. H. E. de Croon"
+        ],
+        "abstract": "Autonomous drone racing represents a major frontier in robotics research. It requires an Artificial Intelligence (AI) that can run on board light-weight flying robots under tight resource and time constraints, while pushing the physical system to its limits. The state of the art in this area consists of a system with a stereo camera and an inertial measurement unit (IMU) that beat human drone racing champions in a controlled indoor environment. Here, we present MonoRace: an onboard drone racing approach that uses a monocular, rolling-shutter camera and IMU that generalizes to a competition environment without any external motion tracking system. The approach features robust state estimation that combines neural-network-based gate segmentation with a drone model. Moreover, it includes an offline optimization procedure that leverages the known geometry of gates to refine any state estimation parameter. This offline optimization is based purely on onboard flight data and is important for fine-tuning the vital external camera calibration parameters. Furthermore, the guidance and control are performed by a neural network that foregoes inner loop controllers by directly sending motor commands. This small network runs on the flight controller at 500Hz. The proposed approach won the 2025 Abu Dhabi Autonomous Drone Racing Competition (A2RL), outperforming all competing AI teams and three human world champion pilots in a direct knockout tournament. It set a new milestone in autonomous drone racing research, reaching speeds up to 100 km/h on the competition track and successfully coping with problems such as camera interference and IMU saturation.",
+        "link": "https://arxiv.org/abs/2601.15222v1",
+        "published": "2026-01-21T17:53:29Z"
+    },
+    {
+        "title": "HumanDiffusion: A Vision-Based Diffusion Trajectory Planner with Human-Conditioned Goals for Search and Rescue UAV",
+        "authors": [
+            "Faryal Batool",
+            "Iana Zhura",
+            "Valerii Serpiva",
+            "Roohan Ahmed Khan",
+            "Ivan Valuev",
+            "Issatay Tokmurziyev",
+            "Dzmitry Tsetserukou"
+        ],
+        "abstract": "Reliable human--robot collaboration in emergency scenarios requires autonomous systems that can detect humans, infer navigation goals, and operate safely in dynamic environments. This paper presents HumanDiffusion, a lightweight image-conditioned diffusion planner that generates human-aware navigation trajectories directly from RGB imagery. The system combines YOLO-11 based human detection with diffusion-driven trajectory generation, enabling a quadrotor to approach a target person and deliver medical assistance without relying on prior maps or computationally intensive planning pipelines. Trajectories are predicted in pixel space, ensuring smooth motion and a consistent safety margin around humans. We evaluate HumanDiffusion in simulation and real-world indoor mock-disaster scenarios. On a 300-sample test set, the model achieves a mean squared error of 0.02 in pixel-space trajectory reconstruction. Real-world experiments demonstrate an overall mission success rate of 80% across accident-response and search-and-locate tasks with partial occlusions. These results indicate that human-conditioned diffusion planning offers a practical and robust solution for human-aware UAV navigation in time-critical assistance settings.",
+        "link": "https://arxiv.org/abs/2601.14973v2",
+        "published": "2026-01-21T13:22:22Z"
+    },
+    {
+        "title": "5G NR Non-Terrestrial Networks: Open Challenges for Full-Stack Protocol Design",
+        "authors": [
+            "Francesco Rossato",
+            "Mattia Figaro",
+            "Alessandro Traspadini",
+            "Takayuki Shimizu",
+            "Chinmay Mahabal",
+            "Sanjeewa Herath",
+            "Chunghan Lee",
+            "Dogan Kutay Pekcan",
+            "Michele Zorzi",
+            "Marco Giordani"
+        ],
+        "abstract": "As 5th generation (5G) networks continue to evolve, there is a growing interest toward the integration of Terrestrial Networks (TNs) and Non-Terrestrial Networks (NTNs). Specifically, NTNs leverage space/air base stations such as satellites, High Altitude Platforms (HAPs), and Unmanned Aerial Vehicles (UAVs) for expanding wireless coverage to underserved rural/remote areas, supporting emergency communications, and offloading traffic in highly congested urban environments. In this paper we focus on the 3GPP 5G NR-NTN standard in the context of satellite communication networks, and highlight critical challenges that must be addressed for proper full-stack protocol design, with considerations related to the PHY, MAC, and higher layers. We also present simulation results in ns-3 to demonstrate the impact of some of these challenges on the network, as an initial step toward more advanced standardization activities on 3GPP 5G NR-NTN.",
+        "link": "https://arxiv.org/abs/2601.14883v1",
+        "published": "2026-01-21T11:15:48Z"
+    },
+    {
+        "title": "From Observation to Prediction: LSTM for Vehicle Lane Change Forecasting on Highway On/Off-Ramps",
+        "authors": [
+            "Mohamed Abouras",
+            "Catherine M. Elias"
+        ],
+        "abstract": "On and off-ramps are understudied road sections even though they introduce a higher level of variation in highway interactions. Predicting vehicles' behavior in these areas can decrease the impact of uncertainty and increase road safety. In this paper, the difference between this Area of Interest (AoI) and a straight highway section is studied. Multi-layered LSTM architecture to train the AoI model with ExiD drone dataset is utilized. In the process, different prediction horizons and different models' workflow are tested. The results show great promise on horizons up to 4 seconds with prediction accuracy starting from about 76% for the AoI and 94% for the general highway scenarios on the maximum horizon.",
+        "link": "https://arxiv.org/abs/2601.14848v1",
+        "published": "2026-01-21T10:31:03Z"
+    },
+    {
+        "title": "LiNUS: Lightweight Automatic Segmentation of Deep Brain Nuclei for Real-Time DBS Surgery",
+        "authors": [
+            "Shuo Zhang",
+            "Zihua Wang",
+            "Changgeng He",
+            "Chunhua Hu"
+        ],
+        "abstract": "This paper proposes LiNUS, a lightweight deep learning framework for the automatic segmentation of the Subthalamic Nucleus (STN) in Deep Brain Stimulation (DBS) surgery. Addressing the challenges of small target volume and class imbalance in MRI data, LiNUS improves upon the U-Net architecture by introducing spectral normalization constraints, bilinear interpolation upsampling, and a multi-scale feature fusion mechanism. Experimental results on the Tsinghua DBS dataset (TT14) demonstrate that LiNUS achieves a Dice coefficient of 0.679 with an inference time of only 0.05 seconds per subject, significantly outperforming traditional manual and registration-based methods. Further validation on high-resolution data confirms the model's robustness, achieving a Dice score of 0.89. A dedicated Graphical User Interface (GUI) was also developed to facilitate real-time clinical application.",
+        "link": "https://arxiv.org/abs/2601.14793v1",
+        "published": "2026-01-21T09:16:59Z"
+    },
+    {
+        "title": "Integrated Sensing, Communication and Control enabled Agile UAV Swarm",
+        "authors": [
+            "Zhiqing Wei",
+            "Yucong Du",
+            "Zhiyong Feng",
+            "Haotian Liu",
+            "Yanpeng Cui",
+            "Tao Zhang",
+            "Ying Zhou",
+            "Huici Wu"
+        ],
+        "abstract": "Uncrewed aerial vehicle (UAV) swarms are pivotal in the applications such as disaster relief, aerial base station (BS) and logistics transportation. These scenarios require the capabilities in accurate sensing, efficient communication and flexible control for real-time and reliable task execution. However, sensing, communication and control are studied independently in traditional research, which limits the overall performance of UAV swarms. To overcome this disadvantage, we propose a deeply coupled scheme of integrated sensing, communication and control (ISCC) for UAV swarms, which is a systemic paradigm that transcends traditional isolated designs of sensing, communication and control by establishing a tightly-coupled closed-loop through the co-optimization of sensing, communication and control. In this article, we firstly analyze the requirements of scenarios and key performance metrics. Subsequently, the enabling technologies are proposed, including communication-and-control-enhanced sensing, sensing-and-control-enhanced communication, and sensing-and-communication-enhanced control. Simulation results validate the performance of the proposed ISCC framework, demonstrating its application potential in the future.",
+        "link": "https://arxiv.org/abs/2601.14783v1",
+        "published": "2026-01-21T09:04:41Z"
+    },
+    {
+        "title": "SimD3: A Synthetic drone Dataset with Payload and Bird Distractor Modeling for Robust Detection",
+        "authors": [
+            "Ami Pandat",
+            "Kanyala Muvva",
+            "Punna Rajasekhar",
+            "Gopika Vinod",
+            "Rohit Shukla"
+        ],
+        "abstract": "Reliable drone detection is challenging due to limited annotated real-world data, large appearance variability, and the presence of visually similar distractors such as birds. To address these challenges, this paper introduces SimD3, a large-scale high-fidelity synthetic dataset designed for robust drone detection in complex aerial environments. Unlike existing synthetic drone datasets, SimD3 explicitly models drones with heterogeneous payloads, incorporates multiple bird species as realistic distractors, and leverages diverse Unreal Engine 5 environments with controlled weather, lighting, and flight trajectories captured using a 360 six-camera rig. Using SimD3, we conduct an extensive experimental evaluation within the YOLOv5 detection framework, including an attention-enhanced variant termed Yolov5m+C3b, where standard bottleneck-based C3 blocks are replaced with C3b modules. Models are evaluated on synthetic data, combined synthetic and real data, and multiple unseen real-world benchmarks to assess robustness and generalization. Experimental results show that SimD3 provides effective supervision for small-object drone detection and that Yolov5m+C3b consistently outperforms the baseline across in-domain and cross-dataset evaluations. These findings highlight the utility of SimD3 for training and benchmarking robust drone detection models under diverse and challenging conditions.",
+        "link": "https://arxiv.org/abs/2601.14742v1",
+        "published": "2026-01-21T07:56:25Z"
+    },
+    {
+        "title": "Hierarchical Optimization Based Multi-objective Dynamic Regulation Scheme for VANET Topology",
+        "authors": [
+            "Ruixing Ren",
+            "Minqi Tao",
+            "Junhui Zhao",
+            "Xiaoke Sun",
+            "Qiuping Li"
+        ],
+        "abstract": "As a core technology of intelligent transportation systems, vehicular ad-hoc networks support latency-sensitive services such as safety warning and cooperative perception via vehicle-to-everything communications. However, their highly dynamic topology increases average path length, raises latency, and reduces throughput, severely limiting communication performance. Existing topology optimization methods lack capabilities in multi-objective coordination, dynamic adaptation, and global-local synergy. To address this, this paper proposes a two-layer dynamic topology regulation scheme combining local feature aggregation and global adjustment. The scheme constructs a dynamic multi-objective optimization model integrating average path length, end-to-end latency, and network throughput, and achieves multi-index coordination via link adaptability metrics and a dynamic normalization mechanism. it quickly responds to local link changes via feature fusion of local node feature extraction and dynamic neighborhood sensing, and balances optimization accuracy and real-time performance using a dual-mode adaptive solving strategy for global topology adjustment. It reduces network oscillation risks by introducing a performance improvement threshold and a topology validity verification mechanism. Simulation results on real urban road networks via the SUMO platform show that the proposed scheme outperforms traditional methods in average path length (stabilizing at ~4 hops), end-to-end latency (remaining ~0.01 s), and network throughput.",
+        "link": "https://arxiv.org/abs/2601.14704v1",
+        "published": "2026-01-21T06:30:41Z"
+    },
+    {
+        "title": "Agentic AI Meets Edge Computing in Autonomous UAV Swarms",
+        "authors": [
+            "Thuan Minh Nguyen",
+            "Vu Tuan Truong",
+            "Long Bao Le"
+        ],
+        "abstract": "The integration of agentic AI, powered by large language models (LLMs) with autonomous reasoning, planning, and execution, into unmanned aerial vehicle (UAV) swarms opens new operational possibilities and brings the vision of the Internet of Drones closer to reality. However, infrastructure constraints, dynamic environments, and the computational demands of multi-agent coordination limit real-world deployment in high-risk scenarios such as wildfires and disaster response. This paper investigates the integration of LLM-based agentic AI and edge computing to realize scalable and resilient autonomy in UAV swarms. We first discuss three architectures for supporting UAV swarms - standalone, edge-enabled, and edge-cloud hybrid deployment - each optimized for varying autonomy and connectivity levels. Then, a use case for wildfire search and rescue (SAR) is designed to demonstrate the efficiency of the edge-enabled architecture, enabling high SAR coverage, reduced mission completion times, and a higher level of autonomy compared to traditional approaches. Finally, we highlight open challenges in integrating LLMs and edge computing for mission-critical UAV-swarm applications.",
+        "link": "https://arxiv.org/abs/2601.14437v1",
+        "published": "2026-01-20T19:45:33Z"
+    },
+    {
+        "title": "GIC-DLC: Differentiable Logic Circuits for Hardware-Friendly Grayscale Image Compression",
+        "authors": [
+            "Till Aczel",
+            "David F. Jenny",
+            "Simon Bührer",
+            "Andreas Plesner",
+            "Antonio Di Maio",
+            "Roger Wattenhofer"
+        ],
+        "abstract": "Neural image codecs achieve higher compression ratios than traditional hand-crafted methods such as PNG or JPEG-XL, but often incur substantial computational overhead, limiting their deployment on energy-constrained devices such as smartphones, cameras, and drones. We propose Grayscale Image Compression with Differentiable Logic Circuits (GIC-DLC), a hardware-aware codec where we train lookup tables to combine the flexibility of neural networks with the efficiency of Boolean operations. Experiments on grayscale benchmark datasets show that GIC-DLC outperforms traditional codecs in compression efficiency while allowing substantial reductions in energy consumption and latency. These results demonstrate that learned compression can be hardware-friendly, offering a promising direction for low-power image compression on edge devices.",
+        "link": "https://arxiv.org/abs/2601.14130v1",
+        "published": "2026-01-20T16:29:23Z"
+    },
+    {
+        "title": "Communication Technologies for Intelligent Transportation Systems: From Railways to UAVs and Beyond",
+        "authors": [
+            "Shrief Rizkalla",
+            "Adrian Kliks",
+            "Nila Bagheri",
+            "Miguel A. Bellido-Manganell",
+            "Aniruddha Chandra",
+            "Anja Dakic",
+            "Laura Finarelli",
+            "Davy Gaillot",
+            "Matti Hamalainen",
+            "Ruisi He",
+            "Markus Hofer",
+            "Sandaruwan Jayaweera",
+            "Francesco Linsalata",
+            "Konstantin Mikhaylov",
+            "Jon M. Peha",
+            "Ibrahim Rashdan",
+            "Gianluca Rizzo",
+            "Abdul Saboor",
+            "Martin Schmidhammer",
+            "Michal Sybis",
+            "Fredrik Tufvesson",
+            "Paul Unterhuber",
+            "Fernando J. Velez",
+            "Evgenii Vinogradov",
+            "Michael Walter",
+            "Thomas Zemen",
+            "Haibin Zhang",
+            "Zhengyu Zhang"
+        ],
+        "abstract": "This white paper aims to comprehensively analyze and consolidate the state of the art in communication technologies supporting modern and future Information and Communication Technology (ICT). Its primary objective is to establish a common understanding of how communication solutions enable automation, safety, and efficiency across multiple transport domains, including railways, road vehicles, aircraft, and unmanned aerial vehicles. The document seeks to identify key communication requirements and technological enablers necessary for interoperable and reliable ITS operation. It also assesses the limitations of current systems and proposes pathways for integrating emerging technologies such as 5G, Sixth Generation (6G), and Artificial Intelligence (AI)-driven network control. The white paper also intends to support harmonization between different transport modes through a unified framework for communication modeling, testing, and standardization. It highlights the importance of accurate channel modeling and empirical validation to design efficient, robust, and scalable systems. Another objective is to explore the use of reconfigurable intelligent surfaces, integrated sensing and communication, and digital twin concepts within ITS. The document emphasizes the role of spectrum management and standardization efforts in ensuring interoperability among diverse communication systems. Finally, the paper seeks to stimulate collaboration among academia, industry, and standardization bodies to advance the design of resilient and adaptive communication infrastructures for future transportation systems.",
+        "link": "https://arxiv.org/abs/2601.14106v1",
+        "published": "2026-01-20T16:04:24Z"
+    },
+    {
+        "title": "Optimizing Energy and Data Collection in UAV-aided IoT Networks using Attention-based Multi-Objective Reinforcement Learning",
+        "authors": [
+            "Babacar Toure",
+            "Dimitrios Tsilimantos",
+            "Omid Esrafilian",
+            "Marios Kountouris"
+        ],
+        "abstract": "Due to their adaptability and mobility, Unmanned Aerial Vehicles (UAVs) are becoming increasingly essential for wireless network services, particularly for data harvesting tasks. In this context, Artificial Intelligence (AI)-based approaches have gained significant attention for addressing UAV path planning tasks in large and complex environments, bridging the gap with real-world deployments. However, many existing algorithms suffer from limited training data, which hampers their performance in highly dynamic environments. Moreover, they often overlook the inherently multi-objective nature of the task, treating it in an overly simplistic manner. To address these limitations, we propose an attention-based Multi-Objective Reinforcement Learning (MORL) architecture that explicitly handles the trade-off between data collection and energy consumption in urban environments, even without prior knowledge of wireless channel conditions. Our method develops a single model capable of adapting to varying trade-off preferences and dynamic scenario parameters without the need for fine-tuning or retraining. Extensive simulations show that our approach achieves substantial improvements in performance, model compactness, sample efficiency, and most importantly, generalization to previously unseen scenarios, outperforming existing RL solutions.",
+        "link": "https://arxiv.org/abs/2601.14092v1",
+        "published": "2026-01-20T15:55:11Z"
+    },
+    {
+        "title": "CityCube: Benchmarking Cross-view Spatial Reasoning on Vision-Language Models in Urban Environments",
+        "authors": [
+            "Haotian Xu",
+            "Yue Hu",
+            "Zhengqiu Zhu",
+            "Chen Gao",
+            "Ziyou Wang",
+            "Junreng Rao",
+            "Wenhao Lu",
+            "Weishi Li",
+            "Quanjun Yin",
+            "Yong Li"
+        ],
+        "abstract": "Cross-view spatial reasoning is essential for embodied AI, underpinning spatial understanding, mental simulation and planning in complex environments. Existing benchmarks primarily emphasize indoor or street settings, overlooking the unique challenges of open-ended urban spaces characterized by rich semantics, complex geometries, and view variations. To address this, we introduce CityCube, a systematic benchmark designed to probe cross-view reasoning capabilities of current VLMs in urban settings. CityCube integrates four viewpoint dynamics to mimic camera movements and spans a wide spectrum of perspectives from multiple platforms, e.g., vehicles, drones and satellites. For a comprehensive assessment, it features 5,022 meticulously annotated multi-view QA pairs categorized into five cognitive dimensions and three spatial relation expressions. A comprehensive evaluation of 33 VLMs reveals a significant performance disparity with humans: even large-scale models struggle to exceed 54.1% accuracy, remaining 34.2% below human performance. By contrast, small-scale fine-tuned VLMs achieve over 60.0% accuracy, highlighting the necessity of our benchmark. Further analyses indicate the task correlations and fundamental cognitive disparity between VLMs and human-like reasoning.",
+        "link": "https://arxiv.org/abs/2601.14339v1",
+        "published": "2026-01-20T13:44:02Z"
+    },
+    {
+        "title": "Where to Place a Heavy Payload on a Multirotor UAV for Best Control Performance",
+        "authors": [
+            "Sander Doodeman",
+            "Paula Chanfreut Palacio",
+            "Elena Torta",
+            "Duarte Antunes"
+        ],
+        "abstract": "This paper studies the impact of rigidly attached heavy payload placement - where the payload mass significantly influences the UAV's dynamics - on the stability and control performance of a multirotor unmanned aerial vehicle (UAV). In particular, we focus on how the position of such a payload relative to the vehicle's Center of Gravity (CoG) affects the stability and control performance at an arbitrary point of interest on the UAV, such as the payload position, and on how this position can be optimized. Our conclusions are based on two key contributions. First, we analyze the stability of the zero-dynamics of a complete nonlinear model of the UAV with payload. We demonstrate that the stability of the zero dynamics depends on the vertical signed distance in the body-fixed frame between the controlled output position and the combined CoG of the UAV with payload. Specifically, positioning the output below the CoG yields unstable zero dynamics, while the linearized zero dynamics are marginally stable when placing it above, indicating reduced sensitivity to input disturbances. Second, we analyze the performance of the linearized UAV model with payload by providing an analytical expression for the H2-norm, from which we can quantify the system's attenuation to white noise input disturbances. We conclude that less control authority leads to a higher optimal position of the controlled output with respect to the CoG for closed-loop white-noise disturbance rejection capabilities, also when the heavy payload is the controlled output. The results are illustrated through numerical examples.",
+        "link": "https://arxiv.org/abs/2601.13958v1",
+        "published": "2026-01-20T13:32:28Z"
+    },
+    {
+        "title": "Designing Drone Interfaces to Assist Pedestrians Crossing Non-Signalised Roads",
+        "authors": [
+            "Guixiang Zhang",
+            "Yiyuan Wang",
+            "Marius Hoggenmueller"
+        ],
+        "abstract": "Recent research highlights the potential of drones to enhance pedestrian experiences, such as aiding navigation and supporting street-level activities. This paper explores the design of drone interfaces to assist pedestrians crossing dangerous roads without designated crosswalks or traffic lights, leveraging drones' ability to monitor and analyse real-time traffic data. Inspired by existing traffic signal systems, the interface communicates safety information through permissive alerts, prohibitive warnings, directional warnings, and collision emergency warnings. These safety cues were integrated into drone interfaces using in-situ projections and drone-equipped screens through an iterative design process. A mixed-methods, within-subjects VR evaluation (n=18) revealed that drone-assisted systems significantly improved pedestrian safety experiences and reduced mental workload compared to a baseline without any crossing aid, with projections outperforming screens. The findings suggest the potential for drone interfaces to be integrated into connected traffic systems. We also offer design recommendations for developing drone interfaces that support safe pedestrian crossings.",
+        "link": "https://arxiv.org/abs/2601.13858v1",
+        "published": "2026-01-20T11:11:22Z"
+    },
+    {
+        "title": "DroneVLA: VLA based Aerial Manipulation",
+        "authors": [
+            "Fawad Mehboob",
+            "Monijesu James",
+            "Amir Habel",
+            "Jeffrin Sam",
+            "Miguel Altamirano Cabrera",
+            "Dzmitry Tsetserukou"
+        ],
+        "abstract": "As aerial platforms evolve from passive observers to active manipulators, the challenge shifts toward designing intuitive interfaces that allow non-expert users to command these systems naturally. This work introduces a novel concept of autonomous aerial manipulation system capable of interpreting high-level natural language commands to retrieve objects and deliver them to a human user. The system is intended to integrate a MediaPipe based on Grounding DINO and a Vision-Language-Action (VLA) model with a custom-built drone equipped with a 1-DOF gripper and an Intel RealSense RGB-D camera. VLA performs semantic reasoning to interpret the intent of a user prompt and generates a prioritized task queue for grasping of relevant objects in the scene. Grounding DINO and dynamic A* planning algorithm are used to navigate and safely relocate the object. To ensure safe and natural interaction during the handover phase, the system employs a human-centric controller driven by MediaPipe. This module provides real-time human pose estimation, allowing the drone to employ visual servoing to maintain a stable, distinct position directly in front of the user, facilitating a comfortable handover. We demonstrate the system's efficacy through real-world experiments for localization and navigation, which resulted in a 0.164m, 0.070m, and 0.084m of max, mean euclidean, and root-mean squared errors, respectively, highlighting the feasibility of VLA for aerial manipulation operations.",
+        "link": "https://arxiv.org/abs/2601.13809v2",
+        "published": "2026-01-20T10:08:00Z"
+    },
+    {
+        "title": "HoverAI: An Embodied Aerial Agent for Natural Human-Drone Interaction",
+        "authors": [
+            "Yuhua Jin",
+            "Nikita Kuzmin",
+            "Georgii Demianchuk",
+            "Mariya Lezina",
+            "Fawad Mehboob",
+            "Issatay Tokmurziyev",
+            "Miguel Altamirano Cabrera",
+            "Muhammad Ahsan Mustafa",
+            "Dzmitry Tsetserukou"
+        ],
+        "abstract": "Drones operating in human-occupied spaces suffer from insufficient communication mechanisms that create uncertainty about their intentions. We present HoverAI, an embodied aerial agent that integrates drone mobility, infrastructure-independent visual projection, and real-time conversational AI into a unified platform. Equipped with a MEMS laser projector, onboard semi-rigid screen, and RGB camera, HoverAI perceives users through vision and voice, responding via lip-synced avatars that adapt appearance to user demographics. The system employs a multimodal pipeline combining VAD, ASR (Whisper), LLM-based intent classification, RAG for dialogue, face analysis for personalization, and voice synthesis (XTTS v2). Evaluation demonstrates high accuracy in command recognition (F1: 0.90), demographic estimation (gender F1: 0.89, age MAE: 5.14 years), and speech transcription (WER: 0.181). By uniting aerial robotics with adaptive conversational AI and self-contained visual output, HoverAI introduces a new class of spatially-aware, socially responsive embodied agents for applications in guidance, assistance, and human-centered interaction.",
+        "link": "https://arxiv.org/abs/2601.13801v1",
+        "published": "2026-01-20T09:59:49Z"
+    },
+    {
+        "title": "SUNSET -- A Sensor-fUsioN based semantic SegmEnTation exemplar for ROS-based self-adaptation",
+        "authors": [
+            "Andreas Wiedholz",
+            "Rafael Paintner",
+            "Julian Gleißner",
+            "Alwin Hoffmann",
+            "Tobias Huber"
+        ],
+        "abstract": "The fact that robots are getting deployed more often in dynamic environments, together with the increasing complexity of their software systems, raises the need for self-adaptive approaches. In these environments robotic software systems increasingly operate amid (1) uncertainties, where symptoms are easy to observe but root causes are ambiguous, or (2) multiple uncertainties appear concurrently. We present SUNSET, a ROS2-based exemplar that enables rigorous, repeatable evaluation of architecture-based self-adaptation in such conditions. It implements a sensor fusion semantic-segmentation pipeline driven by a trained Machine Learning (ML) model whose input preprocessing can be perturbed to induce realistic performance degradations. The exemplar exposes five observable symptoms, where each can be caused by different root causes and supports concurrent uncertainties spanning self-healing and self-optimisation. SUNSET includes the segmentation pipeline, a trained ML model, uncertainty-injection scripts, a baseline controller, and step-by-step integration and evaluation documentation to facilitate reproducible studies and fair comparison.",
+        "link": "https://arxiv.org/abs/2601.13732v1",
+        "published": "2026-01-20T08:40:57Z"
+    },
+    {
+        "title": "MVGD-Net: A Novel Motion-aware Video Glass Surface Detection Network",
+        "authors": [
+            "Yiwei Lu",
+            "Hao Huang",
+            "Tao Yan"
+        ],
+        "abstract": "Glass surface ubiquitous in both daily life and professional environments presents a potential threat to vision-based systems, such as robot and drone navigation. To solve this challenge, most recent studies have shown significant interest in Video Glass Surface Detection (VGSD). We observe that objects in the reflection (or transmission) layer appear farther from the glass surfaces. Consequently, in video motion scenarios, the notable reflected (or transmitted) objects on the glass surface move slower than objects in non-glass regions within the same spatial plane, and this motion inconsistency can effectively reveal the presence of glass surfaces. Based on this observation, we propose a novel network, named MVGD-Net, for detecting glass surfaces in videos by leveraging motion inconsistency cues. Our MVGD-Net features three novel modules: the Cross-scale Multimodal Fusion Module (CMFM) that integrates extracted spatial features and estimated optical flow maps, the History Guided Attention Module (HGAM) and Temporal Cross Attention Module (TCAM), both of which further enhances temporal features. A Temporal-Spatial Decoder (TSD) is also introduced to fuse the spatial and temporal features for generating the glass region mask. Furthermore, for learning our network, we also propose a large-scale dataset, which comprises 312 diverse glass scenarios with a total of 19,268 frames. Extensive experiments demonstrate that our MVGD-Net outperforms relevant state-of-the-art methods.",
+        "link": "https://arxiv.org/abs/2601.13715v1",
+        "published": "2026-01-20T08:19:17Z"
+    },
+    {
+        "title": "Communication-Free Collective Navigation for a Swarm of UAVs via LiDAR-Based Deep Reinforcement Learning",
+        "authors": [
+            "Myong-Yol Choi",
+            "Hankyoul Ko",
+            "Hanse Cho",
+            "Changseung Kim",
+            "Seunghwan Kim",
+            "Jaemin Seo",
+            "Hyondong Oh"
+        ],
+        "abstract": "This paper presents a deep reinforcement learning (DRL) based controller for collective navigation of unmanned aerial vehicle (UAV) swarms in communication-denied environments, enabling robust operation in complex, obstacle-rich environments. Inspired by biological swarms where informed individuals guide groups without explicit communication, we employ an implicit leader-follower framework. In this paradigm, only the leader possesses goal information, while follower UAVs learn robust policies using only onboard LiDAR sensing, without requiring any inter-agent communication or leader identification. Our system utilizes LiDAR point clustering and an extended Kalman filter for stable neighbor tracking, providing reliable perception independent of external positioning systems. The core of our approach is a DRL controller, trained in GPU-accelerated Nvidia Isaac Sim, that enables followers to learn complex emergent behaviors - balancing flocking and obstacle avoidance - using only local perception. This allows the swarm to implicitly follow the leader while robustly addressing perceptual challenges such as occlusion and limited field-of-view. The robustness and sim-to-real transfer of our approach are confirmed through extensive simulations and challenging real-world experiments with a swarm of five UAVs, which successfully demonstrated collective navigation across diverse indoor and outdoor environments without any communication or external localization.",
+        "link": "https://arxiv.org/abs/2601.13657v1",
+        "published": "2026-01-20T06:46:09Z"
+    },
+    {
+        "title": "A uniformity principle for spatial matching",
+        "authors": [
+            "Taha Ameen",
+            "Flore Sentenac",
+            "Sophie H. Yu"
+        ],
+        "abstract": "Platforms matching spatially distributed supply to demand face a fundamental design choice: given a fixed total budget of service range, how should it be allocated across supply nodes ex ante, i.e. before supply and demand locations are realized, to maximize fulfilled demand? We model this problem using bipartite random geometric graphs where $n$ supply and $m$ demand nodes are uniformly distributed on $[0,1]^k$ ($k \\ge 1$), and edges form when demand falls within a supply node's service region, the volume of which is determined by its service range. Since each supply node serves at most one demand, platform performance is determined by the expected size of a maximum matching. We establish a uniformity principle: whenever one service range allocation is more uniform than the other, the more uniform allocation yields a larger expected matching. This principle emerges from diminishing marginal returns to range expanding service range, and limited interference between supply nodes due to bounded ranges naturally fragmenting the graph. For $k=1$, we further characterize the expected matching size through a Markov chain embedding and derive closed-form expressions for special cases. Our results provide theoretical guidance for optimizing service range allocation and designing incentive structures in ride-hailing, on-demand labor markets, and drone delivery networks.",
+        "link": "https://arxiv.org/abs/2601.13426v2",
+        "published": "2026-01-19T22:10:11Z"
+    },
+    {
+        "title": "Autonomous Self-Healing UAV Swarms for Robust 6G Non-Terrestrial Networks",
+        "authors": [
+            "Sambrama Hegde",
+            "Venkata Srirama Rohit Kantheti",
+            "Liang C Chu",
+            "Erik Blasch",
+            "Shih-Chun Lin"
+        ],
+        "abstract": "Recent years have seen an increased interest in the use of Non-terrestrial networks (NTNs), especially the unmanned aerial vehicles (UAVs) to provide cost-effective global connectivity in next-generation wireless networks. We introduce a resilient, adaptive, self-healing network design (RASHND) to optimize signal quality under dynamic interference and adversarial conditions. RASHND leverages inter-node communication and an intelligent algorithm selection process, incorporating combining techniques like distributed-Maximal Ratio Combining (d-MRC), distributed-Linear Minimum Mean Squared Error Estimation(d-LMMSE), and Selection Combining (SC). These algorithms are selected to improve performance by adapting to changing network conditions. To evaluate the effectiveness of the proposed RASHND solutions, a software-defined radio (SDR)-based hardware testbed afforded initial testing and evaluations. Additionally, we present results from UAV tests conducted on the AERPAW testbed to validate our solutions in real-world scenarios. The results demonstrate that RASHND significantly enhances the reliability and interference resilience of UAV networks, making them well-suited for critical communications.",
+        "link": "https://arxiv.org/abs/2601.13418v1",
+        "published": "2026-01-19T22:00:24Z"
+    },
+    {
+        "title": "Function Recovery Attacks in Gate-Hiding Garbled Circuits using SAT Solving",
+        "authors": [
+            "Chao Yin",
+            "Zunchen Huang",
+            "Chenglu Jin",
+            "Marten van Dijk",
+            "Fabio Massacci"
+        ],
+        "abstract": "Semi-Private Function Evaluation enables joint computation while protecting both input data and function logic. A practical instantiation is gate-hiding garbled circuits, which conceal gate functionalities while revealing the circuit topology. Existing security definitions intentionally exclude leakage through circuit topology, leaving the concrete impact of such leakage on function privacy insufficiently understood.\n  We analyze the empirical security of gate hiding under two adversarial models that capture realistic computational capabilities. We present a SAT-based function-recovery attack that reconstructs hidden gate operations from a circuit's public topology. To enable recovery on larger and more complex circuits, we develop an incremental SAT-solving framework combined with a set of composable, topology-preserving simplification theorems. These techniques jointly reduce the SAT instance size and progressively constrain the search space across repeated solving iterations.\n  We evaluate our attack on ISCAS benchmarks, representative secure computation circuits, and fault-tolerant sensor fusion circuits under a fixed 24-hour recovery budget. Compared to baseline approaches, our optimized attack achieves up to a 159-fold speedup in recovery time without increasing the number of oracle queries. Our results demonstrate that topology leakage alone can enable effective function recovery in practice.",
+        "link": "https://arxiv.org/abs/2601.13271v1",
+        "published": "2026-01-19T18:15:12Z"
+    },
+    {
+        "title": "Autonomous Navigation at the Nano-Scale: Algorithms, Architectures, and Constraints",
+        "authors": [
+            "Mahmud S. Zango",
+            "Jianglin Lan"
+        ],
+        "abstract": "Autonomous navigation for nano-scale unmanned aerial vehicles (nano-UAVs) is governed by extreme Size, Weight, and Power (SWaP) constraints (with the weight < 50 g and sub-100 mW onboard processor), distinguishing it fundamentally from standard robotic paradigms. This review synthesizes the state-of-the-art in sensing, computing, and control architectures designed specifically for these sub- 100mW computational envelopes. We critically analyse the transition from classical geometry-based methods to emerging \"Edge AI\" paradigms, including quantized deep neural networks deployed on ultra-low-power System-on-Chips (SoCs) and neuromorphic event-based control. Beyond algorithms, we evaluate the hardware-software co-design requisite for autonomy, covering advancements in dense optical flow, optimized Simultaneous Localization and Mapping (SLAM), and learning-based flight control. While significant progress has been observed in visual navigation and relative pose estimation, our analysis reveals persistent gaps in long-term endurance, robust obstacle avoidance in dynamic environments, and the \"Sim-to-Real\" transfer of reinforcement learning policies. This survey provides a roadmap for bridging these gaps, advocating for hybrid architectures that fuse lightweight classical control with data-driven perception to enable fully autonomous, agile nano-UAVs in GPS-denied environments.",
+        "link": "https://arxiv.org/abs/2601.13252v1",
+        "published": "2026-01-19T17:38:15Z"
+    },
+    {
+        "title": "Co-Channel Interference Mitigation Using Deep Learning for Drone-Based Large-Scale Antenna Measurements",
+        "authors": [
+            "Kadyrzhan Tortayev",
+            "Oliver Falkenberg Damborg",
+            "Jònas À Hàlvmørk Joensen",
+            "Jonas Pedesk",
+            "Yifa Li",
+            "Fengchun Zhang",
+            "Zeliang An",
+            "Yubo Wang",
+            "Ming Shen"
+        ],
+        "abstract": "Unmanned aerial vehicles (UAVs) enable efficient in-situ radiation characterization of large-aperture antennas directly in their deployment environments. In such measurements, a continuous-wave (CW) probe tone is commonly transmitted to characterize the antenna response. However, active co-channel emissions from neighboring antennas often introduce severe in-band interference, where classical FFT-based estimators fail to accurately estimate the CW tone amplitude when the signal-to-interference ratios (SIR) falls below -10 dB. This paper proposes a lightweight deep convolutional neural network (DC-CNN) that estimates the amplitude of the CW tone. The model is trained and evaluated on real 5~GHz measurement bursts spanning an effective SIR range of --33.3 dB to +46.7 dB. Despite its compact size (<20k parameters), the proposed DC-CNN achieves a mean absolute error (MAE) of 7% over the full range, with <1 dB error for SIR >= -30 dB. This robustness and efficiency make DC-CNN suitable for deployment on embedded UAV platforms for interference-resilient antenna pattern characterization.",
+        "link": "https://arxiv.org/abs/2601.13205v1",
+        "published": "2026-01-19T16:30:43Z"
+    }
+]
