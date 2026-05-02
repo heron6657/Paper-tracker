@@ -23,12 +23,18 @@ Return JSON only in this format:
 
 Abstract:
 """
-from openai import OpenAI
+
+import os
 import json
 
-client = OpenAI(api_key="YOUR_API_KEY")
 
 def llm_review(abstract: str):
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        return None
+
+    from openai import OpenAI
+    client = OpenAI(api_key=api_key)
     response = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[
